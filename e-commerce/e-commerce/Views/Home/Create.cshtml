@@ -1,0 +1,120 @@
+﻿
+
+<div style="border:solid 1px green; background-color:forestgreen; text-align:center; justify-content:center;">
+<a onclick="$('#ProductModal').modal('show')" data-toggle="modal" class="nav-link" asp-area="" asp-controller="Home" asp-action="CreateProduct">Create New Product</a>
+</div>
+
+
+<div class="row">
+    @foreach(var i in Model){
+    <div class="col-xl-4 col-md-6 col-12 mt-4">   
+          <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-title">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@i.productCategory / @i.productTag  <b style="float:right;">@i.productCreatedAt&nbsp;</b>
+                </div>
+                <div class="card-body">
+                    <h3>@i.productName</h3>
+                </div>
+                <div class="card-footer">
+                    <b>Stock:</b> @i.productQuantity
+                    <b style="float:right;">@i.productPrice $</b>
+                </div>   
+                <div class="card-footer">
+                    <a onclick="$('#ProductModalU').modal('show')" data-toggle="modal" class="btn btn-outline-warning"  asp-route-id="@i.productId" asp-action="UpdateProduct">Update</a>
+                    <a class="btn btn-outline-danger" style="float:right;"  asp-route-id="@i.productId" asp-action="RemoveProduct">Delete</a>
+                </div>              
+          </div>
+    </div>
+    }
+</div>
+
+
+<div class="modal" id="ProductModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create New Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form method="post" action="/Home/AddProduct">
+      <div class="modal-body">
+        <div class="form-group">
+            <input type="text" name="productId" id="productId" class="form-control d-none" placeholder="ID will be generated automaticly" disabled/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productCategory" id="productCategory" rows="3" placeholder="Enter Category" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productTag" id="productTag" rows="3" placeholder="Enter Tag" required/>
+        </div>
+        <div class="form-group">
+            <input type="text" name="productName" id="productName" class="form-control" placeholder="Enter Name" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productQuantity" id="productQuantity" rows="3" placeholder="Enter Quantity" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productPrice" id="productPrice" rows="3" placeholder="Enter Price" required/>
+        </div>
+        <div class="form-group">
+            <input type="date" class="form-control" name="productCreatedAt" id="productCreatedAt" rows="3" placeholder="Enter Date" required/>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success">Create</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="ProductModalU" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Update Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form method="post" action="/Home/UpdateProduct">
+      <div class="modal-body">
+          @foreach(var i in Model){
+        <div class="form-group">
+            <input type="text" name="productId" id="productId" class="form-control d-none" placeholder="ID will be generated automaticly" disabled/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productCategory" id="productCategory" rows="3" placeholder="@i.productCategory" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productTag" id="productTag" rows="3" placeholder="@i.productTag" required/>
+        </div>
+        <div class="form-group">
+            <input type="text" name="productName" id="productName" class="form-control" placeholder="@i.productName" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productQuantity" id="productQuantity" rows="3" placeholder="@i.productQuantity" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="productPrice" id="productPrice" rows="3" placeholder="@i.productPrice" required/>
+        </div>
+        <div class="form-group">
+            <input type="date" class="form-control" name="productCreatedAt" id="productCreatedAt" rows="3" placeholder="@i.productCreatedAt" required/>
+        </div>
+        }
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-warning">Update</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
