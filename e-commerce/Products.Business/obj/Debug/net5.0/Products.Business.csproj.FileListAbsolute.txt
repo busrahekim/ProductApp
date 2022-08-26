@@ -1,0 +1,17 @@
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.Business.deps.json
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.Business.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.Business.pdb
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.DataAccess.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.Entities.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.DataAccess.pdb
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\bin\Debug\net5.0\Products.Entities.pdb
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.csproj.CopyComplete
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\refint\Products.Business.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\Products.Business.pdb
+C:\Users\lenovo\source\repos\e-commerce\Products.Business\obj\Debug\net5.0\ref\Products.Business.dll

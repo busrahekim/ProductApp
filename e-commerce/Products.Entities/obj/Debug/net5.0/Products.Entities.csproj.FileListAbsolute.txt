@@ -1,0 +1,12 @@
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\bin\Debug\net5.0\Products.Entities.deps.json
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\bin\Debug\net5.0\Products.Entities.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\bin\Debug\net5.0\Products.Entities.pdb
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\refint\Products.Entities.dll
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\Products.Entities.pdb
+C:\Users\lenovo\source\repos\e-commerce\Products.Entities\obj\Debug\net5.0\ref\Products.Entities.dll
