@@ -12,7 +12,7 @@
                     <h3>@i.productName</h3>
                 </div>
                 <div class="card-footer">
-                    <b>Stock:</b> @i.productQuantity
+                    <b>Stock:</b> <input id="qt" value="@i.productQuantity" size="2" disabled/>
                     <b style="float:right;">@i.productPrice $</b>
                 </div>
           </div>
@@ -20,3 +20,17 @@
     }
 </div>
 
+<script>
+    function clicked(i){
+        var v = parseInt(document.getElementById("qt").value);
+        if (v <= 0) {
+            alert("Stock is 0!");
+            document.getElementById("qt").value = 0;
+        }
+        else {
+             v--;
+            document.getElementById("qt").value = v;
+        }
+        
+    }
+</script>
